@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enemies - Level 3</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Orbitron Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+
+        <!-- Hamburger Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div
+            class="ml-auto d-flex flex-column flex-lg-row align-items-start align-items-lg-center"
+          >
+            <a
+              href="index.html"
+              class="btn btn-repo mb-2 mb-lg-0 mr-lg-3"
+              title="Home"
+            >
+              <i class="fas fa-house"></i>
+            </a>
+
+            <!-- MAPS Dropdown -->
+            <div class="dropdown mb-2 mb-lg-0 mr-lg-3">
+              <button
+                class="btn btn-repo dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                MAPS
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="ServiceStation.html"
+                  >Service Station</a
+                >
+                <a class="dropdown-item" href="headman_manor.html"
+                  >Headman Manor</a
+                >
+                <a class="dropdown-item" href="mcjannek_station.html"
+                  >McJannek Station</a
+                >
+                <a class="dropdown-item" href="swiftbroom_academy.html"
+                  >Swiftbroom Academy</a
+                >
+                <a class="dropdown-item" href="disposal_arena.html"
+                  >Disposal Arena</a
+                >
+              </div>
+            </div>
+
+            <!-- ENEMIES Dropdown -->
+            <div class="dropdown mb-2 mb-lg-0 mr-lg-3">
+              <button
+                class="btn btn-repo dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                ENEMIES
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="enemieslvl1.html">Level 1</a>
+                <a class="dropdown-item" href="enemieslvl2.html">Level 2</a>
+                <a class="dropdown-item" href="enemieslvl3.html">Level 3</a>
+              </div>
+            </div>
+
+            <!-- VALUABLES Dropdown -->
+            <div class="dropdown mb-2 mb-lg-0 mr-lg-5">
+              <button
+                class="btn btn-repo dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                VALUABLES
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Cheap</a>
+                <a class="dropdown-item" href="#">Medium</a>
+                <a class="dropdown-item" href="#">High</a>
+                <a class="dropdown-item" href="#">Expensive</a>
+              </div>
+            </div>
+
+            <!-- Search -->
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2 search-bar"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-repo" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ENEMIES LEVEL 3 CONTENT -->
+    <div class="container main-content">
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl3/Headman..jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl3/Headman..jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Headman (Floating Head)</h2>
+          <p>
+            <strong>HP:</strong> 250<br />
+            The Headman is a floating giant head that roams around, making loud
+            biting noises as it looks for players. If it spots a player, it
+            screams, charges, and bites, dealing 50 damage per chomp plus
+            possible knockback damage. <br /><br />
+            If it starts chasing you, just turn a corner and hide—it loses
+            interest fast. Fighting it? Wait for it to attack, since it has a
+            long cooldown. Its poor reach makes sledgehammers a great choice,
+            and guns work well thanks to its massive hitbox. The Baseball Bat is
+            also effective due to its knockback. <br /><br />
+            Takes 13 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl3/Huntsman.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl3/Huntsman.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Huntsman</h2>
+          <p>
+            <strong>HP:</strong> 250<br />
+            The Huntsman is a blind hunter that uses his hunting shotgun as a
+            cane. He is slow, silent, and deadly. One shot deals 100 damage. He
+            hears everything: footsteps, object movement, even text/voice chat.
+            <br /><br />
+            He will fire at any sound source, and if he touches a player, he
+            fires instantly. Hide in furniture or at high ground to stay safe.
+            Throw objects to distract him, dodge when he grunts, or bait a shot
+            and run while he reloads. <br /><br />
+            He cannot descend stairs safely, and is easy to lift when stunned.
+            Baseball Bat works well up close. <br /><br />
+            Takes 9 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl3/The_robe.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl3/The_robe.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Robe</h2>
+          <p>
+            <strong>HP:</strong> 250<br />
+            The Robe silently follows players, then knocks them back for 50–100
+            damage depending on their stance. Looking at its mask enrages it,
+            increasing its speed dramatically. <br /><br />
+            It remembers hiding spots and will reach under cover. If it doesn’t
+            see you or get touched by anything you hold, it may ignore you. Best
+            strategy: stay out of sight and don’t engage. <br /><br />
+            Takes 13 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl3/Clown_beamer.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl3/Clown_beamer.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Clown (Beamer)</h2>
+          <p>
+            <strong>HP:</strong> 250<br />
+            The Clown uses a laser beam that deals 30–70 damage depending on
+            proximity and hits multiple times. After a beam, it cools down for 8
+            seconds. During cooldown, it may kick players for 10–50 damage
+            total. <br /><br />
+            The beam targets your head—crouch or hide behind cover to survive.
+            It's vulnerable after firing. High ledges and quick strikes work
+            well. Avoid scrap loss by keeping valuables far away. <br /><br />
+            Takes 13 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl3/The_reaper.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl3/The_reaper.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Reaper</h2>
+          <p>
+            <strong>HP:</strong> 250<br />
+            The Reaper is slow and deaf with poor vision. If it sees you, it
+            charges with arm windmills, damaging anything nearby. It can’t hear
+            voices or footsteps but does detect the gravi-beam. <br /><br />
+            Crouching generally avoids detection. Hiding under shallow objects
+            won't work—it can crouch and strike. Deep cover or stealth is key.
+            Don’t fight unless you have backup. <br /><br />
+            Takes 9 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl3/Thetrudged.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl3/Thetrudged.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Trudge</h2>
+          <p>
+            <strong>HP:</strong> 500<br />
+            The Trudge drags a huge mace and makes loud grinding sounds. Upon
+            spotting players, it slams the mace to pull them in, then bashes for
+            100 damage. The slam is instant death if you’re directly in front of
+            it. <br /><br />
+            Avoid tight spaces. Hide far away, preferably in another room. It’s
+            slow and easy to outrun, but very tanky. Landmines and traps work
+            due to its predictable movement. <br /><br />
+            Takes 13 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE MODAL -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="" alt="Enemy Image" class="img-fluid" id="modalImage" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5 py-4">
+      <div class="container text-center">
+        <p class="footer-title">R.E.P.O. — UNITE, SURVIVE, EXTRACT</p>
+        <div class="social-icons my-3">
+          <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-x"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footer-text">
+          &copy; 2025 R.E.P.O. Game Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Script to dynamically change the image in the modal
+      $("#imageModal").on("show.bs.modal", function (e) {
+        var imageSource = $(e.relatedTarget).attr("href");
+        $("#modalImage").attr("src", imageSource);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enemies - Level 2</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Orbitron Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+
+        <!-- Hamburger Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <img
+            src="slike/Logo_2x.jpg"
+            alt="REPO Logo"
+            class="repo-logo"
+            style="height: 80px"
+          />
+          <div
+            class="ml-auto d-flex flex-column flex-lg-row align-items-start align-items-lg-center"
+          >
+            <!-- REPO Logo -->
+
+            <a
+              href="index.html"
+              class="btn btn-repo mb-2 mb-lg-0 mr-lg-3"
+              title="Home"
+            >
+              <i class="fas fa-house"></i>
+            </a>
+
+            <!-- MAPS Dropdown -->
+            <div class="dropdown mb-2 mb-lg-0 mr-lg-3">
+              <button
+                class="btn btn-repo dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                MAPS
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="ServiceStation.html"
+                  >Service Station</a
+                >
+                <a class="dropdown-item" href="headman_manor.html"
+                  >Headman Manor</a
+                >
+                <a class="dropdown-item" href="mcjannek_station.html"
+                  >McJannek Station</a
+                >
+                <a class="dropdown-item" href="swiftbroom_academy.html"
+                  >Swiftbroom Academy</a
+                >
+                <a class="dropdown-item" href="disposal_arena.html"
+                  >Disposal Arena</a
+                >
+              </div>
+            </div>
+
+            <!-- ENEMIES Dropdown -->
+            <div class="dropdown mb-2 mb-lg-0 mr-lg-3">
+              <button
+                class="btn btn-repo dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                ENEMIES
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="enemieslvl1.html">Level 1</a>
+                <a class="dropdown-item" href="enemieslvl2.html">Level 2</a>
+                <a class="dropdown-item" href="enemieslvl3.html">Level 3</a>
+              </div>
+            </div>
+
+            <!-- VALUABLES Dropdown -->
+            <div class="dropdown mb-2 mb-lg-0 mr-lg-5">
+              <button
+                class="btn btn-repo dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                VALUABLES
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Cheap</a>
+                <a class="dropdown-item" href="#">Medium</a>
+                <a class="dropdown-item" href="#">High</a>
+                <a class="dropdown-item" href="#">Expensive</a>
+              </div>
+            </div>
+
+            <!-- Search -->
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2 search-bar"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-repo" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ENEMIES LEVEL 1 CONTENT -->
+    <!-- Replace this section inside your <div class="container main-content"> -->
+    <div class="container main-content">
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Animal..jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Animal..jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Animal</h2>
+          <p>
+            <strong>HP:</strong> 150<br />
+            The Animal is a fast, low-threat creature that roams erratically
+            around the map. Its actions are quite random and unpredictable, and
+            it is just as likely to engage with players as it is to run away.
+            While it can attack players directly, the attack is very slow and
+            deals only 2 damage. It may be more beneficial to keep Animals
+            alive, as they can trample Gnomes.<br /><br />
+            If a player attempts to pick an Animal up, it panics and runs away
+            with increased speed. If two or more players grab an Animal at the
+            same time, it will pause and play dead for a few seconds before
+            spinning out of control.<br /><br />
+            The Animal prefers to run rather than fight, and is very easy to
+            kill with any weapon due to its lack of defensive abilities.<br /><br />
+            The Animal will occasionally collide with objects around the map,
+            damaging itself in the process.<br />
+            Takes 4 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Rugrat.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Rugrat.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Rugrat (Baby Monster)</h2>
+          <p>
+            <strong>HP:</strong> 150<br />
+            The Rugrat roams around grabbing valuable items and, if it sees a
+            player while holding something, it throws the item at them, dealing
+            damage to both the player and the item.<br /><br />
+            If it’s empty-handed, it runs away instead. It has no other attacks,
+            but don’t underestimate it—it’s small but strong, capable of lifting
+            and throwing two player items at once, which can one-shot a player,
+            the item, or both.<br /><br />
+            It can be killed by smashing it against the floor or walls, but it’s
+            much heavier than Gnomes, needing either 2 people or one person with
+            4 strength upgrades to lift. If you’re unarmed or alone, these
+            little thieves can be a real problem.<br /><br />
+            When holding it up, you have time to smash it around 2 times before
+            it jumps out of your hands and run away, either to your cart or
+            completely away.<br />
+            If the player grabs the item while the Rugrat is still holding it,
+            it is possible to "Catch" the item.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Upscream..jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Upscream..jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Upscream</h2>
+          <p>
+            <strong>HP:</strong> 50<br />
+            The Upscream is a deformed humanoid that crawls on the floor. When
+            it spots a player, it grabs them, screams, and flings them
+            backwards, dealing 10 damage and stunning them for 2 seconds, often
+            grabbing you right away again dealing more and more damage, until
+            the player manages to flee. The player will likely receive
+            additional damage due to physics damage. The pits are the most
+            dangerous in this case, since from such a strong push you are very
+            likely to fall there.<br /><br />
+            While a single Upscream is manageable, multiple can be deadly as
+            they can stun-lock a player in an endless loop until they die. If
+            there’s more than one, make sure your team is coordinated or it’s
+            game over.<br /><br />
+            The hammer is the best weapon due to their small size, but a
+            Tranquilizer Gun works too, leaving them immobile for a few
+            seconds—at which point you can grab them and treat them like a gnome
+            (which means slamming them into the ground).<br />
+            Takes 4 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/The_bowtie.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/The_bowtie.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Bowtie</h2>
+          <p>
+            <strong>HP:</strong> 100<br />
+            The Bowtie is a large, puffy monster that roams at a medium pace and
+            becomes a problem once it spots a player. When it does, it lets out
+            a continuous scream, pushing the player back and disabling sprinting
+            and jumping until they escape.<br /><br />
+            The scream itself doesn’t deal damage, but if it pushes you into a
+            wall or obstacle, it hurts badly. It can also push small monsters
+            like Rugrats, Bangers, and Gnomes, occasionally causing chaos.<br /><br />
+            Sometimes, Bowties will randomly enter a frenzy, stomping around at
+            high speed and damaging everything in their way. Luckily, they are
+            slow when roaming and can’t move while screaming, making them easy
+            targets.<br /><br />
+            Tranquilizer Guns and firearms work well, but melee weapons are just
+            as effective. Takes 9 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Chef_frog.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Chef_frog.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Chef (Frog)</h2>
+          <p>
+            <strong>HP:</strong> 150<br />
+            The Chef is a slow-moving enemy that resembles a frog in a chef's
+            uniform. Upon spotting a player it pauses, smiles, and then leaps at
+            the player while swinging its large cleavers wildly.<br /><br />
+            Players are able to sidestep the Chef's lunge attack, as once it has
+            drawn its knives the direction of its leap is locked. Alternatively,
+            hiding behind a door or wall is also effective.<br /><br />
+            The Chef deals a lot of damage when it attacks, but not enough to
+            kill a player with full HP in one leap. If the Chef misses its
+            attack, it ragdolls and flails about on the ground for a short
+            time.<br />
+            Takes 9 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Hidden.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Hidden.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Hidden</h2>
+          <p>
+            <strong>HP:</strong> 100<br />
+            The Hidden is a nearly-invisible monster with only a black smoke
+            cloud for a head and faint footprints as signs of its presence. If
+            it touches a player, it screams, grabs them, and carries them around
+            at high speed, stunning them and forcing them to drop their
+            items.<br /><br />
+            It’s hard to spot, so you might not even realize one is in the level
+            until it snatches you. It can drag you straight into other enemies
+            or off the map. The easiest way to avoid being grabbed is to listen
+            for its breathing and run for cover.<br /><br />
+            The Hidden leaves smoky black footsteps. If you're fast, you can
+            grab it or swing a bat to hit. Fans can knock it down, and once
+            grounded, it can be picked up and slammed.<br />
+            It can also help in late-game by carrying players back to the truck.
+            Wild, right?
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Banger.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Banger.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Banger</h2>
+          <p>
+            <strong>HP:</strong> 65<br />
+            The Banger is an explosive enemy that spawns in groups of three and
+            wanders aimlessly. If it sees a player or takes damage, its fuse
+            ignites, and it charges at the nearest player.<br /><br />
+            Once lit, the fuse cannot be put out. The Banger kills any player at
+            close proximity and deals high damage from a distance. Bangers can
+            be picked up and thrown like grenades, but they break free after ~3
+            seconds.<br /><br />
+            Listen for their fuse sounds and spread out to avoid chain kills.
+            They only have 3 HP, so smashing them twice then tossing them is
+            ideal.<br />
+            Great for turning enemy mobs into craters.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-box text-box align-items-center mb-5">
+        <div class="col-md-5">
+          <a
+            href="slike/Enemies/lvl2/Mentalist.jpg"
+            data-toggle="modal"
+            data-target="#imageModal"
+          >
+            <img
+              src="slike/Enemies/lvl2/Mentalist.jpg"
+              alt="Animal"
+              class="img-fluid map-image"
+            />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h2>Mentalist (Alien)</h2>
+          <p>
+            <strong>HP:</strong> 150<br />
+            The Mentalist is a floating enemy that searches for players and,
+            when it finds one, activates an anti-gravity aura that lifts all
+            players and items nearby, holding them immobile for 10 seconds.
+            After that, the aura turns red, and everything gets slammed back
+            down, often killing players trapped under furniture due to physics
+            damage.<br /><br />
+            You can also save your friends by dragging them out — safest to do
+            this in the short window when the aura becomes red. If lifted high
+            up, though, it just counts as fall damage (40-50 HP loss), which can
+            be prevented by placing a pocket cart below to cushion your fall.<br /><br />
+            It can teleport anywhere at will, flipping mid-air as it disappears,
+            making it hard to track. Killing it is fairly easy with melee
+            weapons due to low HP, but if caught, have a teammate ready to pull
+            you away before it drops you.<br /><br />
+            Hiding is the safest bet, as it's deaf with poor eyesight — but if
+            spotted, it chases at a medium pace. Since it can teleport, always
+            assume it’s waiting behind the next door.<br />
+            Takes 4 strength upgrades to pick up.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE MODAL -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="" alt="Enemy Image" class="img-fluid" id="modalImage" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5 py-4">
+      <div class="container text-center">
+        <p class="footer-title">R.E.P.O. — UNITE, SURVIVE, EXTRACT</p>
+        <div class="social-icons my-3">
+          <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-x"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footer-text">
+          &copy; 2025 R.E.P.O. Game Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Script to dynamically change the image in the modal
+      $("#imageModal").on("show.bs.modal", function (e) {
+        var imageSource = $(e.relatedTarget).attr("href");
+        $("#modalImage").attr("src", imageSource);
+      });
+    </script>
+  </body>
+</html>
