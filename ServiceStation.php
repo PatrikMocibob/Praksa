@@ -31,84 +31,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container d-flex justify-content-between">
-        <a class="navbar-brand" href="#"></a>
-        <div class="d-flex">
-          <a href="index.html" class="btn btn-repo mr-3" title="Home">
-            <i class="fas fa-house"></i>
-          </a>
-
-          <div class="dropdown mr-3">
-            <button
-              class="btn btn-repo dropdown-toggle"
-              type="button"
-              id="mapsDropdown"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              MAPS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="mapsDropdown">
-              <a class="dropdown-item" href="ServiceStation.html">Service Station</a>
-              <a class="dropdown-item" href="headman_manor.html">Headman Manor</a>
-              <a class="dropdown-item" href="mcjannek_station.html">McJannek Station</a>
-              <a class="dropdown-item" href="swiftbroom_academy.html">Swiftbroom Academy</a>
-              <a class="dropdown-item" href="disposal_arena.html">Disposal Arena</a>
-            </div>
-          </div>
-
-          <div class="dropdown mr-3">
-            <button
-              class="btn btn-repo dropdown-toggle"
-              type="button"
-              id="enemiesDropdown"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ENEMIES
-            </button>
-            <div class="dropdown-menu" aria-labelledby="enemiesDropdown">
-              <a class="dropdown-item" href="enemieslvl1.html">Level 1</a>
-              <a class="dropdown-item" href="enemieslvl2.html">Level 2</a>
-              <a class="dropdown-item" href="enemieslvl3.html">Level 3</a>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <button
-              class="btn btn-repo dropdown-toggle"
-              type="button"
-              id="valuablesDropdown"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              VALUABLES
-            </button>
-            <div class="dropdown-menu" aria-labelledby="valuablesDropdown">
-              <a class="dropdown-item" href="#">Cheap</a>
-              <a class="dropdown-item" href="#">Medium</a>
-              <a class="dropdown-item" href="#">High</a>
-              <a class="dropdown-item" href="#">Expensive</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Search Bar -->
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2 search-bar"
-            type="search"
-            placeholder="Search..."
-            aria-label="Search"
-          />
-          <button class="btn btn-repo" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+    <?php include 'header.php'; ?>
 
     <!-- Page Content -->
     <div class="container main-content mt-4">
@@ -861,19 +784,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer mt-5 py-4">
-      <div class="container text-center">
-        <p class="footer-title">R.E.P.O. — UNITE, SURVIVE, EXTRACT</p>
-        <div class="social-icons my-3">
-          <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-x"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-        <p class="footer-text">
-          &copy; 2025 R.E.P.O. Game Studio. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    <?php include 'footer'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
