@@ -10,7 +10,7 @@ body {
 
 .navbar {
   padding: 1rem;
-  border-bottom: 2px solid #ffcc00; /* Adds yellow line at the top */
+  border-bottom: 2px solid #ffcc00; 
 }
 
 .navbar .container {

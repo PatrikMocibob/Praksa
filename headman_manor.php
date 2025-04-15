@@ -146,7 +146,7 @@
     </div>
 
     <!-- FOOTER -->
-    <?php include 'footer'; ?>
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
