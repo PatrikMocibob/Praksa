@@ -26,8 +26,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
-
-    
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -65,18 +63,16 @@
             <h4>The Secret Room</h4>
             <p>
               A secret room always appears in the service station. To find it,
-              you need to go to the purchase station and to the right of it
-              there will be a tile that needs to be lifted—it will always be on
-              the side where the medkits are.
+              go to the purchase station and to the right of it is a tile you
+              can lift—always on the side with the medkits.
             </p>
             <p>
-              It is almost impossible to get into the room without upgrading to
-              an extra jump in singleplayer, but you can also use a Shockwave
-              Mine, Shockwave Grenade, or other gear.
+              It’s difficult to enter in singleplayer without the extra jump
+              upgrade, but you can also use Shockwave gear.
             </p>
             <p>
-              A Human Grenade and a Duct Tape Grenade may appear in this room.
-              Also in this room is Stow Away (Larry).
+              A Human Grenade and a Duct Tape Grenade may spawn here. Stow Away
+              (Larry) is also located inside.
             </p>
           </div>
           <div class="col-md-6 order-md-1">
@@ -90,653 +86,269 @@
           </div>
         </div>
 
-        <!-- Medkits Table Section -->
-        <div class="row mt-5">
-          <div class="col">
-            <h4>Items - Medkits</h4>
-            <div class="table-responsive">
-              <table
-                class="table table-bordered table-hover mt-3 bg-light text-dark"
-              >
-                <thead class="thead-dark">
-                  <tr>
-                    <th>Size</th>
-                    <th>Image</th>
-                    <th>Cost</th>
-                    <th>Heal Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Small Health Pack</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station3.jpg"
-                        alt="Small Medkit"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k–6k</td>
-                    <td>25HP</td>
-                  </tr>
-                  <tr>
-                    <td>Medium Health Pack</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station4.jpg"
-                        alt="Medium Medkit"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$5k–11k</td>
-                    <td>50HP</td>
-                  </tr>
-                  <tr>
-                    <td>Large Health Pack</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station5.jpg"
-                        alt="Large Medkit"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$9k–16k</td>
-                    <td>100HP</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+        <!-- Medkits Table -->
+        <div class="table-responsive mt-4">
+          <h4>Medkits Available for Purchase</h4>
+          <table class="table table-striped repo-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Image</th>
+                <th>Cost</th>
+                <th>Heal Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Small Health Pack</td>
+                <td>
+                  <img
+                    src="slike/Maps/service_station/service_station3.jpg"
+                    alt="Small Health Pack"
+                    class="img-thumbnail"
+                    width="100"
+                  />
+                </td>
+                <td>$3k–6k</td>
+                <td>25HP</td>
+              </tr>
+              <tr>
+                <td>Medium Health Pack</td>
+                <td>
+                  <img
+                    src="slike/Maps/service_station/service_station4.jpg"
+                    alt="Medium Health Pack"
+                    class="img-thumbnail"
+                    width="100"
+                  />
+                </td>
+                <td>$5k–11k</td>
+                <td>50HP</td>
+              </tr>
+              <tr>
+                <td>Large Health Pack</td>
+                <td>
+                  <img
+                    src="slike/Maps/service_station/service_station5.jpg"
+                    alt="Large Health Pack"
+                    class="img-thumbnail"
+                    width="100"
+                  />
+                </td>
+                <td>$9k–16k</td>
+                <td>100HP</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- Upgrades Section -->
-        <div class="row mt-5">
-          <div class="col">
-            <h4>Items - Upgrades</h4>
-            <div class="table-responsive">
-              <table
-                class="table table-bordered table-hover mt-3 bg-light text-dark"
-              >
-                <thead class="thead-dark">
-                  <tr>
-                    <th>Upgrade</th>
-                    <th>Image</th>
-                    <th>Cost</th>
-                    <th>Information</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Stamina</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station6.jpg"
-                        alt="Stamina"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$2k–14k</td>
-                    <td>Increase stamina by 10 points</td>
-                  </tr>
-                  <tr>
-                    <td>Sprint Speed</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station7.jpg"
-                        alt="Sprint Speed"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$5k–24k</td>
-                    <td>Increase sprint speed</td>
-                  </tr>
-                  <tr>
-                    <td>Health</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station8.jpg"
-                        alt="Health"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$4k–18k</td>
-                    <td>Increase max health by 20HP</td>
-                  </tr>
-                  <tr>
-                    <td>Grab Strength</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station9.jpg"
-                        alt="Grab Strength"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$6k–45k</td>
-                    <td>
-                      Increase strength to pick up larger, heavier items. 13
-                      strength is needed to lift everything in the game by
-                      yourself.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Grab Range</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station10.jpg"
-                        alt="Grab Range"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$6k–32k</td>
-                    <td>
-                      Increase pick-up range and scrollable range (left-click
-                      and scroll wheel).
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Grab Throw</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station11.jpg"
-                        alt="Grab Throw"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$6k–8k</td>
-                    <td>Allows player to throw objects (left-click).</td>
-                  </tr>
-                  <tr>
-                    <td>Tumble Launch</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station12.jpg"
-                        alt="Tumble Launch"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$4k–5k</td>
-                    <td>Increase tumble launch distance.</td>
-                  </tr>
-                  <tr>
-                    <td>Extra Jump</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station13.jpg"
-                        alt="Extra Jump"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$10k–18k</td>
-                    <td>
-                      Gives you two jumps instead of one. (additional upgrades
-                      increase jump amount by +1)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Map Player Count</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station14.jpg"
-                        alt="Map Player Count"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$9k–12k</td>
-                    <td>
-                      Keeps track of your teammate's position on the map based
-                      on the number of upgrades you have. You need to upgrade
-                      twice to see another player’s position and so on.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+        <!-- Upgrades Table -->
+        <div class="table-responsive mt-4">
+          <h4>Upgrades Available for Purchase</h4>
+          <table class="table table-striped repo-table">
+            <thead>
+              <tr>
+                <th>Upgrade</th>
+                <th>Image</th>
+                <th>Cost</th>
+                <th>Info</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Stamina</td>
+                <td>
+                  <img 
+                    src="slike/Maps/service_station/service_station6.jpg" 
+                    alt="Stamina Upgrade" 
+                    class="img-thumbnail" 
+                    width="100">
+                </td>
+                <td>$2k–14k</td>
+                <td>Increase stamina by 10</td>
+              </tr>
+              <tr>
+                <td>Sprint Speed</td>
+                <td><img src="slike/Maps/service_station/service_station7.jpg" alt="Sprint Speed Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$5k–24k</td>
+                <td>Boost movement speed</td>
+              </tr>
+              <tr>
+                <td>Health</td>
+                <td><img src="slike/Maps/service_station/service_station8.jpg" alt="Health Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$4k–18k</td>
+                <td>+20 max HP</td>
+              </tr>
+              <tr>
+                <td>Grab Strength</td>
+                <td><img src="slike/Maps/service_station/service_station9.jpg" alt="Grab Strength Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$6k–45k</td>
+                <td>Lift heavier items</td>
+              </tr>
+              <tr>
+                <td>Grab Range</td>
+                <td><img src="slike/Maps/service_station/service_station10.jpg" alt="Grab Range Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$6k–32k</td>
+                <td>Increases pickup range</td>
+              </tr>
+              <tr>
+                <td>Grab Throw</td>
+                <td><img src="slike/Maps/service_station/service_station11.jpg" alt="Grab Throw Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$6k–8k</td>
+                <td>Allows object throwing</td>
+              </tr>
+              <tr>
+                <td>Tumble Launch</td>
+                <td><img src="slike/Maps/service_station/service_station12.jpg" alt="Tumble Launch Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$4k–5k</td>
+                <td>Increases tumble distance</td>
+              </tr>
+              <tr>
+                <td>Extra Jump</td>
+                <td><img src="slike/Maps/service_station/service_station13.jpg" alt="Extra Jump Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$10k–18k</td>
+                <td>Gain an extra jump</td>
+              </tr>
+              <tr>
+                <td>Map Player Count</td>
+                <td><img src="slike/Maps/service_station/service_station14.jpg" alt="Map Player Count Upgrade" class="img-thumbnail" width="100"></td>
+                <td>$9k–12k</td>
+                <td>Track teammate locations</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- Weapons Section -->
-        <div class="row mt-5">
-          <div class="col">
-            <h4>Items - Weapons</h4>
-            <div class="table-responsive">
-              <table
-                class="table table-bordered table-hover mt-3 bg-light text-dark"
-              >
-                <thead class="thead-dark">
-                  <tr>
-                    <th>Item</th>
-                    <th>Image</th>
-                    <th>Cost</th>
-                    <th>Function</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Crystal</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station15.jpg"
-                        alt="Crystal"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$7k–19k</td>
-                    <td>
-                      Recharges eligible items bought from the Service Station.
-                      Place in the charging station to use.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Grenade</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station16.jpg"
-                        alt="Grenade"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k</td>
-                    <td>
-                      Arms on E key press. Explodes after a few seconds, dealing
-                      75HP to players and knocking them away.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Stun Grenade</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station17.jpg"
-                        alt="Stun Grenade"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k</td>
-                    <td>Acts as a flashbang. Can stun entities and players.</td>
-                  </tr>
-                  <tr>
-                    <td>Shockwave Grenade</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station18.jpg"
-                        alt="Shockwave Grenade"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k</td>
-                    <td>
-                      Creates a shockwave that electrocutes and displaces
-                      anything nearby.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Duct Tape Grenade</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station19.jpg"
-                        alt="Duct Tape Grenade"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$2k</td>
-                    <td>
-                      Found in secret section of the Service Station only.
-                      Chance-based spawn.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Human Grenade</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station20.jpg"
-                        alt="Human Grenade"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$2k</td>
-                    <td>
-                      Found in secret section of the Service Station only.
-                      Chance-based spawn.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Shockwave Mine</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station21.jpg"
-                        alt="Shockwave Mine"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k</td>
-                    <td>
-                      Triggers a shockwave when stepped on. Can be disarmed and
-                      retrieved.
-                    </td>
-                  </tr>
-                    <td>Explosive Mine</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station22.jpg"
-                        alt="Explosive Mine"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k</td>
-                    <td>
-                      Explodes when stepped on. Can be disarmed and retrieved.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Stun Mine</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station23.jpg"
-                        alt="Stun Mine"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$3k</td>
-                    <td>
-                      Stuns creatures that step on it. Can be disarmed and
-                      retrieved.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Rubber Duck</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station24.jpg"
-                        alt="Rubber Duck"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$15k–18k</td>
-                    <td>
-                      Bounces wildly and deals damage. May explode on impact.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Baseball Bat</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station25.jpg"
-                        alt="Baseball Bat"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$25k–28k</td>
-                    <td>
-                      25 base damage, knocks enemies into structures causing
-                      extra damage.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Frying Pan</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station26.jpg"
-                        alt="Frying Pan"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$19k–30k</td>
-                    <td>Short-range melee weapon with medium damage.</td>
-                  </tr>
-                  <tr>
-                    <td>Inflatable Hammer</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station27.jpg"
-                        alt="Inflatable Hammer"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$9k–11k</td>
-                    <td>
-                      Low damage per hit, with chance of powerful explosion.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Sledge Hammer</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station28.jpg"
-                        alt="Sledge Hammer"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$39k–43k</td>
-                    <td>
-                      Very high damage. Difficult to control and may bounce back
-                      dangerously.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Sword</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station29.jpg"
-                        alt="Sword"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$24k–28k</td>
-                    <td>Medium-range melee with decent damage.</td>
-                  </tr>
-                  <tr>
-                    <td>Gun</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station30.jpg"
-                        alt="Gun"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$47k</td>
-                    <td>
-                      Moderate damage, hard to aim. Can one-shot weaker enemies.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Shotgun</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station31.jpg"
-                        alt="Shotgun"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$79k–96k</td>
-                    <td>High damage, but short range.</td>
-                  </tr>
-                  <tr>
-                    <td>Tranq Gun</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station32.jpg"
-                        alt="Tranq Gun"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$15k–16k</td>
-                    <td>
-                      Temporarily stuns players or monsters. 3 shots before
-                      recharge. Very inaccurate.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col">
-            <h4>Items - Gear</h4>
-            <div class="table-responsive">
-              <table
-                class="table table-bordered table-hover mt-3 bg-light text-dark"
-              >
-                <thead class="thead-dark">
-                  <tr>
-                    <th>Item</th>
-                    <th>Image</th>
-                    <th>Cost</th>
-                    <th>Function</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>C.A.R.T.</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station33.jpg"
-                        alt="CART"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$39k–47k</td>
-                    <td>
-                      Extra cart for carrying items. Returns to truck
-                      automatically at level start, does not despawn.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Pocket C.A.R.T.</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station34.jpg"
-                        alt="Pocket CART"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$15k–18k</td>
-                    <td>
-                      Small portable cart stored in hotbar. Items inside drop
-                      when picked up.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Indestructible Drone</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station35.jpg"
-                        alt="Indestructible Drone"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$23k–28k</td>
-                    <td>
-                      Makes attached items indestructible. Teleports items back
-                      within range if too far.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Roll Drone</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station36.jpg"
-                        alt="Roll Drone"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$9k–12k</td>
-                    <td>
-                      Causes host to roll. Can affect objects, players, or
-                      enemies depending on attachment.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Feather Drone</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station37.jpg"
-                        alt="Feather Drone"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$13k–17k</td>
-                    <td>
-                      Reduces weight of attached objects or players to a
-                      minimum.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Zero Gravity Drone</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station38.jpg"
-                        alt="Zero Gravity Drone"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$24k–26k</td>
-                    <td>Removes gravity from attached players or objects.</td>
-                  </tr>
-                  <tr>
-                    <td>Recharge Drone</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station39.jpg"
-                        alt="Recharge Drone"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$5k</td>
-                    <td>
-                      Recharge tools, weapons, and drones without returning to
-                      truck. Drains its own battery.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Zero Gravity Orb</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station40.jpg"
-                        alt="Zero Gravity Orb"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$39k–48k</td>
-                    <td>
-                      Removes gravity from all objects/players (except the orb)
-                      inside its radius when activated.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Extraction Tracker</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station41.jpg"
-                        alt="Extraction Tracker"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$7k–8k</td>
-                    <td>
-                      Points toward inactive extraction zones and displays
-                      distance. Useless when all are active.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Valuable Tracker</td>
-                    <td>
-                      <img
-                        src="slike/Maps/service_station/service_station42.jpg"
-                        alt="Valuable Tracker"
-                        style="height: 50px; border-radius: 8px"
-                      />
-                    </td>
-                    <td>$15k–18k</td>
-                    <td>
-                      Shows distance and plays beeps based on proximity to
-                      valuables worth over ~$1500.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+        <div class="table-responsive mt-4">
+  <h4>Weapons Available for Purchase</h4>
+  <table class="table table-striped repo-table" style="table-layout: fixed; width: 100%; overflow: hidden;">
+    <thead>
+      <tr>
+        <th style="width: 18%;">Item</th>
+        <th style="width: 18%;">Image</th> 
+        <th style="width: 20%;">Cost</th>
+        <th style="width: 34%;">Function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Crystal</td>
+        <td><img src="slike/Maps/service_station/service_station15.jpg" alt="Crystal" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$7k–$19k</td>
+        <td>Recharges eligible items at the charging station.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Grenade</td>
+        <td><img src="slike/Maps/service_station/service_station16.jpg" alt="Grenade" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$3k</td>
+        <td>Arms by pressing E. Explodes after a short delay, dealing 75HP damage.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Stun Grenade</td>
+        <td><img src="slike/Maps/service_station/service_station17.jpg" alt="Stun Grenade" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$3k</td>
+        <td>Acts as a flashbang. Stuns entities and players.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Shockwave Grenade</td>
+        <td><img src="slike/Maps/service_station/service_station18.jpg" alt="Shockwave Grenade" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$3k</td>
+        <td>Explodes into a shockwave, electrocuting and displacing nearby entities.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Duct Tape Grenade</td>
+        <td><img src="slike/Maps/service_station/service_station19.jpg" alt="Duct Tape Grenade" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$2k</td>
+        <td>Found in the secret section. Chance to spawn with the Human Grenade.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Human Grenade</td>
+        <td><img src="slike/Maps/service_station/service_station20.jpg" alt="Human Grenade" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$2k</td>
+        <td>Found in the secret section. Chance to spawn with the Duct Tape Grenade.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Shockwave Mine</td>
+        <td><img src="slike/Maps/service_station/service_station21.jpg" alt="Shockwave Mine" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$3k</td>
+        <td>Latches to the ground, electrocutes anything nearby when triggered.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Explosive Mine</td>
+        <td><img src="slike/Maps/service_station/service_station22.jpg" alt="Explosive Mine" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$3k</td>
+        <td>Latches to the ground, explodes when stepped on.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Stun Mine</td>
+        <td><img src="slike/Maps/service_station/service_station23.jpg" alt="Stun Mine" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$3k</td>
+        <td>Stuns any creature that steps on it. Can be disarmed.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Rubber Duck</td>
+        <td><img src="slike/Maps/service_station/service_station24.jpg" alt="Rubber Duck" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$15k–$18k</td>
+        <td>Bounces and deals damage, with a chance to explode.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Baseball Bat</td>
+        <td><img src="slike/Maps/service_station/service_station25.jpg" alt="Baseball Bat" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$25k–$28k</td>
+        <td>Deals 25 damage and knocks enemies into structures.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Frying Pan</td>
+        <td><img src="slike/Maps/service_station/service_station26.jpg" alt="Frying Pan" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$19k–$30k</td>
+        <td>Short-range melee with medium damage.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Inflatable Hammer</td>
+        <td><img src="slike/Maps/service_station/service_station27.jpg" alt="Inflatable Hammer" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$9k–$11k</td>
+        <td>Deals 3 damage and may cause a large explosion.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Sledge Hammer</td>
+        <td><img src="slike/Maps/service_station/service_station28.jpg" alt="Sledge Hammer" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$39k–$43k</td>
+        <td>Heavy melee weapon with high damage and knockback.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Sword</td>
+        <td><img src="slike/Maps/service_station/service_station29.jpg" alt="Sword" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$24k–$28k</td>
+        <td>Medium-range melee with medium damage.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Gun</td>
+        <td><img src="slike/Maps/service_station/service_station30.jpg" alt="Gun" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$47k</td>
+        <td>Moderate damage weapon for players and monsters.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Shotgun</td>
+        <td><img src="slike/Maps/service_station/service_station31.jpg" alt="Shotgun" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$79k–$96k</td>
+        <td>Deals high damage at short range.</td>
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Tranq Gun</td>
+        <td><img src="slike/Maps/service_station/service_station32.jpg" alt="Tranq Gun" class="img-fluid" style="max-width: 100%; height: auto;"></td>
+        <td>$15k–$16k</td>
+        <td>Temporarily stuns enemies. Fires up to 3 shots.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+        
+
       </div>
     </div>
 
@@ -784,7 +396,7 @@
     </div>
 
     <!-- Footer -->
-    <?php include 'footer'; ?>
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>

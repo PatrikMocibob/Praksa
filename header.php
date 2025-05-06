@@ -1,6 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#"> <img
+            src="slike/Logo_2x.jpg"
+            alt="REPO Logo"
+            class="repo-logo"
+            style="height: 80px"
+            
+          /></a>
 
         <!-- Hamburger Toggle Button -->
         <button
@@ -16,17 +22,13 @@
         </button>
 
         <!-- Collapsible Content -->
+        
         <div class="collapse navbar-collapse" id="navbarContent">
-          <img
-            src="slike/Logo_2x.jpg"
-            alt="REPO Logo"
-            class="repo-logo"
-            style="height: 80px"
-          />
+          
           <div
             class="ml-auto d-flex flex-column flex-lg-row align-items-start align-items-lg-center"
           >
-            <!-- REPO Logo -->
+
 
             <a
               href="index.php"
@@ -55,9 +57,7 @@
                 <a class="dropdown-item" href="mcjannek_station.php"
                   >McJannek Station</a
                 >
-                <a class="dropdown-item" href="swiftbroom_academy.php"
-                  >Swiftbroom Academy</a
-                >
+                
                 <a class="dropdown-item" href="disposal_arena.php"
                   >Disposal Arena</a
                 >
@@ -80,22 +80,13 @@
               </div>
             </div>
 
-            <!-- VALUABLES Dropdown -->
-            <div class="dropdown mb-2 mb-lg-0 mr-lg-5">
-              <button
-                class="btn btn-repo dropdown-toggle"
-                type="button"
-                data-toggle="dropdown"
-              >
-                VALUABLES
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Cheap</a>
-                <a class="dropdown-item" href="#">Medium</a>
-                <a class="dropdown-item" href="#">High</a>
-                <a class="dropdown-item" href="#">Expensive</a>
-              </div>
+            <!-- CONTACT US BUTTON -->
+            <div class="mb-2 mb-lg-0 mr-lg-5">
+              <a href="contact.php" class="btn btn-repo">
+                CONTACT US
+             </a>
             </div>
+
 
             <!-- Search -->
             <form class="form-inline my-2 my-lg-0">
@@ -104,6 +95,7 @@
                 type="search"
                 placeholder="Search..."
                 aria-label="Search"
+              
               />
               <button class="btn btn-repo" type="submit">Search</button>
             </form>

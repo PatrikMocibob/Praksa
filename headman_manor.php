@@ -49,7 +49,7 @@
         </div>
 
         <!-- IMAGE SECTION -->
-        <div class="col-md-4">
+        <div class="col-md-5">
           <img
             src="slike/Maps/headman_manor/Headman_Manor.jpg"
             alt="Service Station Overview"
@@ -146,7 +146,7 @@
     </div>
 
     <!-- FOOTER -->
-    <?php include 'footer'; ?>
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>

@@ -32,84 +32,97 @@
     <?php include 'header.php'; ?>
 
     <!-- Main Content -->
-    <div class="container main-content">
-      <div class="content-wrapper">
-        <!-- Text Content Box -->
-        <div class="content-box text-box">
-          <h2>ABOUT THE GAME</h2>
-          <p>
-            <span
-              >R.E.P.O. is an online co-op horror game featuring physics,
-              proximity voice chat, and scary monsters.</span
-            >
-            <span
-              >Extract valuable objects using your physics-based grabbing
-              tool.</span
-            >
-            <span
-              >This game is still in early access and available on Steam.</span
-            >
-          </p>
-        </div>
+<div class="container main-content">
+  <div class="content-wrapper">
 
-        <!-- Image Grid -->
-        <div class="content-box">
-          <div class="image-grid">
-            <img
-              src="slike/slika_homepage.jpg"
-              alt="Image 1"
-              class="img-thumbnail image-hover"
-              data-toggle="modal"
-              data-target="#imageModal"
-            />
-            <img
-              src="slike/slika_homepage2.jpg"
-              alt="Image 2"
-              class="img-thumbnail image-hover"
-              data-toggle="modal"
-              data-target="#imageModal"
-            />
-            <img
-              src="slike/slika_homepage3.jpg"
-              alt="Image 3"
-              class="img-thumbnail image-hover"
-              data-toggle="modal"
-              data-target="#imageModal"
-            />
-            <img
-              src="slike/slika_homepage4.jpg"
-              alt="Image 4"
-              class="img-thumbnail image-hover"
-              data-toggle="modal"
-              data-target="#imageModal"
-            />
-            <img
-              src="slike/slika_homepage5.jpg"
-              alt="Image 5"
-              class="img-thumbnail image-hover"
-              data-toggle="modal"
-              data-target="#imageModal"
-            />
-            <img
-              src="slike/slika_homepage6.jpg"
-              alt="Image 6"
-              class="img-thumbnail image-hover"
-              data-toggle="modal"
-              data-target="#imageModal"
-            />
-          </div>
-        </div>
-      </div>
+    <!-- Text Content Box -->
+    <div class="content-box text-box">
+      <h2>ABOUT THE GAME</h2>
+      <p>
+        <span>
+          R.E.P.O. is an online co-op horror game featuring physics,
+          proximity voice chat, and scary monsters.
+        </span>
+        <span>
+          Extract valuable objects using your physics-based grabbing tool.
+        </span>
+        <span>
+          This game is still in early access and available on Steam.
+        </span>
+      </p>
 
-      <!-- Get the Game Now Button -->
-      <div class="get-game-btn-container text-center">
-        <a
-          href="https://store.steampowered.com/app/3241660/REPO/"
-          class="btn btn-repo get-game-btn"
-          >Get the Game Now</a
-        >
+      <!-- Responsive video embed -->
+      <!-- Local video embed -->
+      <div class="row mt-4">
+        <div class="col-md-10 col-lg-7 mx-auto">
+          <video class="w-100 rounded shadow" controls>
+            <source src="slike/repo.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
+
+    <!-- Image Grid -->
+    <div class="content-box">
+      <div class="image-grid">
+        <img
+          src="slike/slika_homepage.jpg"
+          alt="Image 1"
+          class="img-thumbnail image-hover"
+          data-toggle="modal"
+          data-target="#imageModal"
+        />
+        <img
+          src="slike/slika_homepage2.jpg"
+          alt="Image 2"
+          class="img-thumbnail image-hover"
+          data-toggle="modal"
+          data-target="#imageModal"
+        />
+        <img
+          src="slike/slika_homepage3.jpg"
+          alt="Image 3"
+          class="img-thumbnail image-hover"
+          data-toggle="modal"
+          data-target="#imageModal"
+        />
+        <img
+          src="slike/slika_homepage4.jpg"
+          alt="Image 4"
+          class="img-thumbnail image-hover"
+          data-toggle="modal"
+          data-target="#imageModal"
+        />
+        <img
+          src="slike/slika_homepage5.jpg"
+          alt="Image 5"
+          class="img-thumbnail image-hover"
+          data-toggle="modal"
+          data-target="#imageModal"
+        />
+        <img
+          src="slike/slika_homepage6.jpg"
+          alt="Image 6"
+          class="img-thumbnail image-hover"
+          data-toggle="modal"
+          data-target="#imageModal"
+        />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Get the Game Now Button -->
+  <div class="get-game-btn-container text-center">
+    <a
+      href="https://store.steampowered.com/app/3241660/REPO/"
+      class="btn btn-repo get-game-btn">
+      Get the Game Now
+    </a>
+  </div>
+</div>
+
 
     <!-- Modal -->
     <div
@@ -135,7 +148,7 @@
     </div>
 
     <!-- Footer -->
-    <?php include 'footer'; ?>
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
