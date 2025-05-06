@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +29,7 @@
     <!-- Navigation Bar -->
     <?php include 'header.php'; ?>
 
-    <!-- ENEMIES LEVEL 1 CONTENT -->
+    <!-- Enemies lvl 1 content -->
     <div class="container main-content">
       <div class="row content-box text-box align-items-center mb-5">
         <div class="col-md-5">
@@ -193,7 +193,7 @@
       </div>
     </div>
 
-    <!-- IMAGE MODAL -->
+    <!-- Image modal -->
     <div
       class="modal fade"
       id="imageModal"
@@ -211,10 +211,10 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <?php include 'footer.php'; ?>
 
-    <!-- Bootstrap Scripts -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 

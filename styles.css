@@ -206,7 +206,6 @@ body {
   width: 65%;
 }
 
-/* REPO-styled table */
 .repo-table {
   background-color: #0d1117;
   color: #f0f0f0;
@@ -265,27 +264,24 @@ label {
   background-color: #1a252f;
 }
 
-/* Contact Form Fields - Thicker borders */
 .form-control {
-  border: 2px solid #000; /* Black border */
-  border-radius: 8px; /* Optional: slightly round edges */
-  padding: 10px; /* Slight padding to make the fields thicker */
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
   font-size: 1rem;
 }
 
-/* Label Text - Ensure black color */
 label {
   color: #000;
   font-weight: 600;
-  margin-bottom: 5px; /* Small space between label and input */
+  margin-bottom: 5px;
 }
 
-/* Contact Us Header - Make it stand out more */
 h2.text-center {
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
-  color: #ffcc00; /* Yellow color for emphasis */
-  font-size: 2rem; /* Larger size for the header */
-  text-transform: uppercase; /* Add some style */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for extra emphasis */
+  color: #ffcc00;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }

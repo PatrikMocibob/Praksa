@@ -29,7 +29,7 @@
             class="ml-auto d-flex flex-column flex-lg-row align-items-start align-items-lg-center"
           >
 
-
+            <!-- Home Button -->
             <a
               href="index.php"
               class="btn btn-repo mb-2 mb-lg-0 mr-lg-3"
@@ -38,7 +38,7 @@
               <i class="fas fa-house"></i>
             </a>
 
-            <!-- MAPS Dropdown -->
+            <!-- Maps Dropdown -->
             <div class="dropdown mb-2 mb-lg-0 mr-lg-3">
               <button
                 class="btn btn-repo dropdown-toggle"
@@ -64,7 +64,7 @@
               </div>
             </div>
 
-            <!-- ENEMIES Dropdown -->
+            <!-- Enemies Dropdown -->
             <div class="dropdown mb-2 mb-lg-0 mr-lg-3">
               <button
                 class="btn btn-repo dropdown-toggle"
@@ -80,7 +80,7 @@
               </div>
             </div>
 
-            <!-- CONTACT US BUTTON -->
+            <!-- Contact us button -->
             <div class="mb-2 mb-lg-0 mr-lg-5">
               <a href="contact.php" class="btn btn-repo">
                 CONTACT US

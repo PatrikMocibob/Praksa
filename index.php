@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,7 +51,7 @@
         </span>
       </p>
 
-      <!-- Responsive video embed -->
+      
       <!-- Local video embed -->
       <div class="row mt-4">
         <div class="col-md-10 col-lg-7 mx-auto">
@@ -124,7 +124,7 @@
 </div>
 
 
-    <!-- Modal -->
+    <!-- Image modal -->
     <div
       class="modal fade"
       id="imageModal"

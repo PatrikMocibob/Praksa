@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +32,6 @@
     <!-- Disposal Arena Content -->
     <div class="container main-content">
       <div class="row content-box text-box align-items-center">
-        <!-- TEXT SECTION -->
         <div class="col-md-7">
           <h2>DISPOSAL ARENA</h2>
           <p class="disposal-description">
@@ -62,7 +61,7 @@
           </p>
         </div>
 
-        <!-- IMAGE SECTION -->
+        <!-- Image section -->
         <div class="col-md-5">
           <img
             src="slike/Maps/disposal_arena/Disposal_Arena.jpg"
@@ -75,7 +74,7 @@
       </div>
     </div>
 
-    <!-- IMAGE MODAL -->
+    <!-- Image modal -->
     <div
       class="modal fade"
       id="imageModal"
@@ -97,10 +96,10 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <?php include 'footer.php'; ?>
 
-    <!-- Bootstrap Scripts -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>

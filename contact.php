@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -97,11 +97,11 @@
     <!-- Footer -->
     <?php include 'footer.php'; ?>
 
-    <!-- Bootstrap Scripts -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script to show the modal and handle AJAX submission -->
+    <!-- Modals and AJAX sumissions -->
     <script>
       document.getElementById("contactForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevents the form from submitting the traditional way
@@ -119,11 +119,11 @@
             $('#successModal').modal('show');
             document.getElementById("contactForm").reset(); // Reset the form after submission
           } else {
-            alert("There was an error: " + data.error); // Show error if there was an issue
+            alert("There was an error: " + data.error); // Issue error
           }
         })
         .catch((error) => {
-          alert("Request failed: " + error); // Handle network errors
+          alert("Request failed: " + error); // Network errors
         });
       });
     </script>

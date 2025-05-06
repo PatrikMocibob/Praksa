@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +32,6 @@
     <!-- Headman Manor Content -->
     <div class="container main-content">
       <div class="row content-box text-box align-items-center">
-        <!-- TEXT SECTION -->
         <div class="col-md-7">
           <h2>HEADMAN MANOR</h2>
           <p class="headman-description">
@@ -48,7 +47,7 @@
           </p>
         </div>
 
-        <!-- IMAGE SECTION -->
+        <!-- Image section -->
         <div class="col-md-5">
           <img
             src="slike/Maps/headman_manor/Headman_Manor.jpg"
@@ -60,7 +59,7 @@
         </div>
       </div>
 
-      <!-- VALUABLES & MONSTERS -->
+      <!-- Valuables and monsters -->
       <div class="row content-box">
         <div class="col-md-4">
           <h5>Notable Valuables</h5>
@@ -123,7 +122,7 @@
       </div>
     </div>
 
-    <!-- IMAGE MODAL -->
+    <!-- Image modal -->
     <div
       class="modal fade"
       id="imageModal"
@@ -145,10 +144,10 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <?php include 'footer.php'; ?>
 
-    <!-- Bootstrap Scripts -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
