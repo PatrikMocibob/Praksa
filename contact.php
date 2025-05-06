@@ -39,26 +39,27 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="firstName">Name</label>
-                  <input type="text" class="form-control" id="firstname" placeholder="Name" required />
+                  <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Name" required />
                 </div>
                 <div class="form-group col-md-6">
                   <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastname" placeholder="Last name" required />
+                  <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name" required />
                 </div>
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
-                <input type="tel" class="form-control" id="phone" placeholder="(555) 123-4567" />
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="(555) 123-4567" />
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   rows="5"
                   placeholder="Type your message here..."
                   required
@@ -100,16 +101,30 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script to show the modal -->
+    <!-- Script to show the modal and handle AJAX submission -->
     <script>
-      document.getElementById("contactForm").addEventListener("submit", function(event) {
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevents the form from submitting the traditional way
 
-        // Show success modal
-        $('#successModal').modal('show');
-        
-        // Reset form after submission
-        document.getElementById("contactForm").reset();
+        const formData = new FormData(this); // Collect the form data
+
+        fetch("submit_contact.php", {
+          method: "POST",
+          body: formData,
+        })
+        .then((response) => response.json()) // Parse JSON response
+        .then((data) => {
+          if (data.success) {
+            // Show success modal if the message was sent successfully
+            $('#successModal').modal('show');
+            document.getElementById("contactForm").reset(); // Reset the form after submission
+          } else {
+            alert("There was an error: " + data.error); // Show error if there was an issue
+          }
+        })
+        .catch((error) => {
+          alert("Request failed: " + error); // Handle network errors
+        });
       });
     </script>
   </body>
