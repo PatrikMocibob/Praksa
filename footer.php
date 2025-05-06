@@ -10,4 +10,4 @@
           &copy; 2025 R.E.P.O. Game Studio. All rights reserved.
         </p>
       </div>
-    </footer>
+</footer>
