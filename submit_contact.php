@@ -14,14 +14,13 @@ $options = [
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
 
-    // Collect data from POST
     $name = $_POST['firstname'] ?? '';
     $lastName = $_POST['lastname'] ?? '';
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $message = $_POST['message'] ?? '';
 
-    // Insert query
+   
     $stmt = $pdo->prepare("INSERT INTO ContactForm (Name, LastName, Email, Phone, Message)
                            VALUES (:name, :lastName, :email, :phone, :message)");
 

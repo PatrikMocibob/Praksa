@@ -29,26 +29,28 @@
     <!-- Navigation Bar -->
     <?php include 'header.php'; ?>
 
-    <!-- Contact Form Section -->
     <div class="container main-content mt-5 mb-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="card shadow p-4">
             <h2 class="text-center mb-4">Contact Us</h2>
-            <form id="contactForm">
+            <form id="contactForm" class="needs-validation" novalidate>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="firstName">Name</label>
+                  <label for="firstname">Name</label>
                   <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Name" required />
+                  <div class="invalid-feedback">Please enter your name.</div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="lastName">Last Name</label>
+                  <label for="lastname">Last Name</label>
                   <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name" required />
+                  <div class="invalid-feedback">Please enter your last name.</div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
@@ -64,6 +66,7 @@
                   placeholder="Type your message here..."
                   required
                 ></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
               </div>
               <div class="text-center">
                 <button type="submit" class="btn btn-primary px-5">Send Message</button>
@@ -74,7 +77,6 @@
       </div>
     </div>
 
-    <!-- Success Modal -->
     <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content" style="background-color: #4CAF50; border: 3px solid #388E3C;">
@@ -101,31 +103,40 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Modals and AJAX sumissions -->
+    <!-- Modals and Bootstrap Validation + AJAX -->
     <script>
-      document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevents the form from submitting the traditional way
+      (function () {
+        const form = document.getElementById("contactForm");
 
-        const formData = new FormData(this); // Collect the form data
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
 
-        fetch("submit_contact.php", {
-          method: "POST",
-          body: formData,
-        })
-        .then((response) => response.json()) // Parse JSON response
-        .then((data) => {
-          if (data.success) {
-            // Show success modal if the message was sent successfully
-            $('#successModal').modal('show');
-            document.getElementById("contactForm").reset(); // Reset the form after submission
-          } else {
-            alert("There was an error: " + data.error); // Issue error
+          if (form.checkValidity()) {
+            const formData = new FormData(form);
+
+            fetch("submit_contact.php", {
+              method: "POST",
+              body: formData,
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                if (data.success) {
+                  $('#successModal').modal('show');
+                  form.reset();
+                  form.classList.remove('was-validated');
+                } else {
+                  alert("There was an error: " + data.error);
+                }
+              })
+              .catch((error) => {
+                alert("Request failed: " + error);
+              });
           }
-        })
-        .catch((error) => {
-          alert("Request failed: " + error); // Network errors
-        });
-      });
+
+          form.classList.add("was-validated");
+        }, false);
+      })();
     </script>
   </body>
 </html>

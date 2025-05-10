@@ -238,14 +238,6 @@ body {
   height: auto;
 }
 
-@media (max-width: 576px) {
-  .repo-table td,
-  .repo-table th {
-    padding: 0.3rem;
-    font-size: 0.8rem;
-  }
-}
-
 .card {
   border-radius: 1rem;
   background-color: #fdfdfd;
@@ -284,4 +276,82 @@ h2.text-center {
   font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .repo-table td {
+    display: block;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .repo-table td::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding-left: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  /* Medkits */
+  .medkits-table td:nth-child(1)::before {
+    content: "Item";
+  }
+  .medkits-table td:nth-child(2)::before {
+    content: "Image";
+  }
+  .medkits-table td:nth-child(3)::before {
+    content: "Cost";
+  }
+  .medkits-table td:nth-child(4)::before {
+    content: "Heal Amount";
+  }
+
+  /* Upgrades */
+  .upgrades-table td:nth-child(1)::before {
+    content: "Upgrade";
+  }
+  .upgrades-table td:nth-child(2)::before {
+    content: "Image";
+  }
+  .upgrades-table td:nth-child(3)::before {
+    content: "Cost";
+  }
+  .upgrades-table td:nth-child(4)::before {
+    content: "Info";
+  }
+
+  /* Weapons */
+  .weapons-table td:nth-child(1)::before {
+    content: "Item";
+  }
+  .weapons-table td:nth-child(2)::before {
+    content: "Image";
+  }
+  .weapons-table td:nth-child(3)::before {
+    content: "Cost";
+  }
+  .weapons-table td:nth-child(4)::before {
+    content: "Function";
+  }
+
+  .repo-table thead {
+    display: none;
+  }
+}
+
+/* CSS to change cursor to a hand when hovering over sortable columns */
+.sortable-column {
+  cursor: pointer;
+  text-decoration: underline; /* Optional: Adds an underline when hovering for clarity */
+}
+
+/* Optional: Add a little styling for better visibility */
+.sortable-column:hover {
+  color: #007bff; /* Changes color when hovered */
 }
